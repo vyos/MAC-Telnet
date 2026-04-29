@@ -43,7 +43,3 @@ Mirror twin: `VyOS-Networks/MAC-Telnet`. Canonical side is **here** (`vyos/MAC-T
 - Stale codebase — last meaningful upstream activity in 2014. Touch only when strictly necessary for VyOS packaging.
 - Fork parent: `haakonnessjoen/MAC-Telnet`.
 - License: GPL-2.
-
----
-
-This file is mirrored on Confluence: [`vyos/MAC-Telnet`](https://internal.confluence.vyos.com/wiki/spaces/VYOS/pages/818184542). The Confluence page also carries the per-repo audit data (settings, workflows, secret counts, hygiene) that complements this CLAUDE.md. Edit either side; resync via the documentation pipeline.
