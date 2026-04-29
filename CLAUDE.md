@@ -6,14 +6,12 @@ Fork of [haakonnessjoen/MAC-Telnet](https://github.com/haakonnessjoen/MAC-Telnet
 
 ## Tech stack
 
-- C, with autotools (`configure.ac`/`Makefile.am`) plus a top-level `Makefile`. License GPL-2.
+- C, with a plain `Makefile` (no autotools). License GPL-2.
 - Source files: `mactelnet.c`, `mndp.c`, `macping.c`, `mactelnetd.c`, `autologin.c`, `interfaces.c`, `console.c`, `users.c`, ...
 
 ## Build / test / run
 
 ```
-./autogen.sh        # if present
-./configure
 make all
 make install
 ```
@@ -22,7 +20,7 @@ Per upstream README: `make all install`. No automated test suite.
 
 ## Repository layout
 
-Flat C source layout: per-binary `.c` files at top level (`mactelnet.c`, `mactelnetd.c`, `mndp.c`, `macping.c`), shared helpers (`config.c`, `interfaces.c`, `users.c`, `console.c`), `protocol.c/h`, `md5.c/h`, plus `Makefile`, `LICENSE` (GPL-2). Internationalisation under `po/`.
+Flat C source layout: per-binary `.c` files at top level (`mactelnet.c`, `mactelnetd.c`, `mndp.c`, `macping.c`), shared helpers (`interfaces.c`, `users.c`, `console.c`, `autologin.c`), `protocol.c/h`, `md5.c/h`, `config.h`, runtime config under `config/`, plus `Makefile`, `LICENSE` (GPL-2). Internationalisation under `po/`.
 
 ## Cross-repo context
 
