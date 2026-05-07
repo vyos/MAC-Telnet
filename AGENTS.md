@@ -7,7 +7,7 @@ Fork of [haakonnessjoen/MAC-Telnet](https://github.com/haakonnessjoen/MAC-Telnet
 ## Tech stack
 
 - C, with a plain `Makefile` (no autotools). License GPL-2.
-- Source files: `mactelnet.c`, `mndp.c`, `macping.c`, `mactelnetd.c`, `autologin.c`, `interfaces.c`, `console.c`, `users.c`, ...
+- Source files: `mactelnet.c`, `mndp.c`, `macping.c`, `mactelnetd.c`, `autologin.c`, `interfaces.c`, `console.c`, `users.c`,...
 
 ## Build / test / run
 
