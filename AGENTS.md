@@ -24,17 +24,13 @@ Flat C source layout: per-binary `.c` files at top level (`mactelnet.c`, `mactel
 
 ## Cross-repo context
 
-Per-package C binary; one of the small native packages built into VyOS images via `VyOS-Networks/vyos-build-packages` and consumed at ISO assembly time by `vyos/vyos-build`. Not in the canonical 14-repo `repos.toml` build set; built manually when needed.
+Per-package C binary; one of the small native packages built into VyOS images via the internal build-packages workflow and consumed at ISO assembly time by `vyos/vyos-build`. Not in the canonical 14-repo `repos.toml` build set; built manually when needed.
 
 ## Conventions
 
 - Commit / PR title format: `component: T12345: description` (Phorge task ID mandatory). Enforced by `vyos/.github` reusable workflows where consumed.
 - Branch model: `current` (rolling), `circinus` (1.5 LTS), `sagitta` (1.4 LTS), `equuleus` (1.3 LTS).
 - Fork of upstream — keep VyOS-specific patches minimal; prefer upstreaming.
-
-## Mirror relationship
-
-Mirror twin: `VyOS-Networks/MAC-Telnet`. Canonical side is **here** (`vyos/MAC-Telnet`).
 
 ## Notes for future contributors
 
